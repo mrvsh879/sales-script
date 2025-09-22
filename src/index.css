@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg:#0b0f14;
+  --panel:#121821;
+  --muted:#8b9bb4;
+  --card:#0f1520;
+}
+html,body,#root{height:100%}
+body{background:var(--bg); color:white;}
+.scrollbar-thin::-webkit-scrollbar{height:8px;width:8px}
+.scrollbar-thin::-webkit-scrollbar-thumb{background:#243041;border-radius:8px}
+.scrollbar-thin::-webkit-scrollbar-track{background:#0c1119}
