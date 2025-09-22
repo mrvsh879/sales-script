@@ -29,7 +29,7 @@ export const useDataStore = create<State>((set, get) => ({
   init: async () => {
     try {
       set({ loading: true })
-      const res = await fetch('/sales_script_full.json')
+      const res = await fetch(import.meta.env.BASE_URL + 'sales_script_full.json')
       const data: CombinedJSON = await res.json()
 
       const nodes: Node[] = data.sheets.flatMap((s: Sheet) =>
